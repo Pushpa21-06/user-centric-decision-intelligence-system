@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+
+    <title>
+        Analysis Results
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+    href="{{ url_for(
+    'static',
+    filename='results.css') }}">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background">
+    </div>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+
+        <button id="backBtn">
+
+            ← Dashboard
+
+        </button>
+
+    </div>
+
+    <!-- MAIN -->
+    <section class="results-wrapper">
+
+        <!-- RESULT CARD -->
+        <div class="results-card">
+
+            <div class="chart-header">
+
+                <div>
+
+                    <h1>
+                        Analysis Results
+                    </h1>
+
+                    <p>
+                        Visual insights
+                        from your data
+                    </p>
+
+                </div>
+
+                <!-- Chart Type -->
+                <select id="chartType">
+
+                    <option value="bar">
+                        Bar Chart
+                    </option>
+
+                    <option value="pie">
+                        Pie Chart
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- CHART -->
+            <div class="chart-container">
+
+                <canvas id="resultChart">
+                </canvas>
+
+            </div>
+
+        </div>
+
+        <!-- INSIGHT CARDS -->
+        <div class="info-grid">
+
+            <div class="info-card">
+
+                <h3>
+                    Insights
+                </h3>
+
+                <p id="insightText">
+
+                    Key patterns and
+                    observations
+                    will appear here.
+
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>
+                    Recommendations
+                </h3>
+
+                <p id="recommendationText">
+
+                    Suggestions based
+                    on analysis
+                    will appear here.
+
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>
+                    Analysis
+                </h3>
+
+                <p id="analysisText">
+
+                    Detailed analysis
+                    summary will
+                    appear here.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js">
+    </script>
+
+    <!-- JS -->
+    <script src="{{ url_for(
+    'static',
+    filename='results.js') }}">
+    </script>
+
+</body>
+</html>

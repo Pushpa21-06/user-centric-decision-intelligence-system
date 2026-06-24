@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+
+    <title>
+        Decision Intelligence
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+    href="{{ url_for(
+    'static',
+    filename='login.css') }}">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+rel="stylesheet">
+    <link
+rel="stylesheet"
+href="https://fonts.cdnfonts.com/css/sf-pro-display">
+
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background">
+    </div>
+
+    <!-- INTRO SCREEN -->
+    <section id="introScreen">
+
+        <div class="intro-content">
+
+            <h1 id="helloText">
+            </h1>
+
+            <h2 id="welcomeText">
+                Welcome Back !!
+            </h2>
+
+            <p id="taglineText">
+
+                Smart Data. Better Decisions.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- LOGIN -->
+    <section id="loginSection">
+
+        <div class="login-card">
+
+            <h2>
+                Login
+            </h2>
+
+            <p class="subtext">
+
+                Welcome to
+                Decision Intelligence
+
+            </p>
+
+            <input
+            type="text"
+            id="username"
+            placeholder="Username">
+
+            <input
+            type="password"
+            id="password"
+            placeholder="Password">
+
+            <button id="loginBtn">
+
+                Login
+
+            </button>
+
+            <p id="loginError">
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- JS -->
+    <script src="{{ url_for(
+    'static',
+    filename='login.js') }}">
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+
+    <title>
+        Decision Intelligence
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+    href="{{ url_for(
+    'static',
+    filename='dashboard.css') }}">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background">
+    </div>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+
+        <button id="historyBtn">
+
+    <img
+    src="{{ url_for(
+    'static',
+    filename='assets/brain-icon.png'
+    ) }}"
+
+    alt="History">
+
+</button>
+
+    </div>
+
+    <!-- HISTORY PANEL -->
+    <aside id="historyPanel">
+
+        <div class="history-header">
+
+            <h2>
+                Analysis History
+            </h2>
+
+        </div>
+
+        <div class="history-content">
+
+            <div class="history-card">
+
+                <h4>
+                    sales.csv
+                </h4>
+
+                <p>
+                    Today • Auto Mode
+                </p>
+
+            </div>
+
+            <div class="history-card">
+
+                <h4>
+                    expense.xlsx
+                </h4>
+
+                <p>
+                    Yesterday • Manual
+                </p>
+
+            </div>
+
+        </div>
+
+        <button id="logoutBtn">
+
+            Logout
+
+        </button>
+
+    </aside>
+
+    <!-- MAIN PANEL -->
+    <section class="dashboard-wrapper">
+
+        <div class="dashboard-card">
+
+            <h1>
+                Upload Dataset
+            </h1>
+
+            <p class="subtitle">
+
+                Upload your file
+                and analyze data
+
+            </p>
+
+            <!-- Upload -->
+            <label
+            class="upload-box">
+
+                <input
+                type="file"
+                id="fileInput"
+                hidden>
+
+                <span id="fileText">
+
+                    Click to upload
+                    CSV / Excel
+
+                </span>
+
+            </label>
+
+            <!-- Analyze -->
+            <button
+            id="analyzeBtn">
+
+                Analyze
+
+            </button>
+
+            <!-- Modes -->
+            <div
+            id="modeSection">
+
+                <h3>
+                    Choose Mode
+                </h3>
+
+                <div class="mode-buttons">
+
+                    <button
+                    class="mode-btn"
+                    id="autoMode">
+
+                        Auto Mode
+
+                    </button>
+
+                    <button
+                    class="mode-btn"
+                    id="manualMode">
+
+                        Manual Mode
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Manual Options -->
+            <div
+            id="manualOptions">
+
+                <select
+                id="xAxis">
+
+                    <option>
+                        Select X Axis
+                    </option>
+
+                </select>
+
+                <select
+                id="yAxis">
+
+                    <option>
+                        Select Y Axis
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- View Result -->
+            <button
+            id="resultBtn">
+
+                View Results
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="{{ url_for(
+    'static',
+    filename='dashboard.js') }}">
+    </script>
+
+</body>
+</html>
