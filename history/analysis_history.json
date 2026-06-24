@@ -1,0 +1,11 @@
+[
+    {
+        "mode": "auto",
+        "x_column": "Category",
+        "y_column": "Amount",
+        "insights": "The dataset contains a total value of 27500 across all records. The average Amount is 3928.57. The highest contribution comes from Shopping with a value of 7000. The lowest contribution comes from Healthcare with a value of 1500.",
+        "analysis": "The analysis indicates that Shopping dominates the dataset compared to other categories. There is a noticeable variation between the highest and lowest values, suggesting an uneven distribution pattern in the data.",
+        "recommendation": "It is recommended to closely monitor Shopping since it represents the largest share of the dataset. Optimizing or balancing the distribution may improve overall efficiency and stability.",
+        "timestamp": "2026-05-10 08:56:24"
+    }
+]

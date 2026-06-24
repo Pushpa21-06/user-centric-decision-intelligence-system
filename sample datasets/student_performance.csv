@@ -1,0 +1,31 @@
+Student_ID,Department,Attendance,Study_Hours,Assignment_Score,Exam_Score
+S001,Data Science,92,5,88,85
+S002,Computer Science,85,4,79,76
+S003,Electronics,78,3,70,68
+S004,Mechanical,88,5,82,80
+S005,Civil,81,4,75,72
+S006,Data Science,95,6,91,90
+S007,Computer Science,87,5,84,81
+S008,Electronics,73,2,65,63
+S009,Mechanical,90,5,86,84
+S010,Civil,79,3,71,70
+S011,Data Science,94,6,89,92
+S012,Computer Science,82,4,77,74
+S013,Electronics,76,3,68,67
+S014,Mechanical,91,5,85,83
+S015,Civil,84,4,78,75
+S016,Data Science,89,5,83,86
+S017,Computer Science,80,4,74,72
+S018,Electronics,71,2,62,60
+S019,Mechanical,86,4,81,79
+S020,Civil,77,3,69,66
+S021,Data Science,96,6,93,94
+S022,Computer Science,88,5,85,82
+S023,Electronics,74,3,66,64
+S024,Mechanical,89,5,84,81
+S025,Civil,83,4,76,73
+S026,Data Science,91,5,87,88
+S027,Computer Science,84,4,80,78
+S028,Electronics,72,2,64,61
+S029,Mechanical,87,5,83,80
+S030,Civil,80,3,72,69
